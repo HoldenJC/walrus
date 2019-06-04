@@ -1,6 +1,10 @@
 $(document).ready(function () {
-  $(".clickable").click(function() {
-    $("#initially-hidden").fadeToggle();
-    $("#initially-showing").toggle();
+  $(".show").click(function() {
+    $("#initially-hidden").slideDown();
+    $("#initially-showing").slideUp();
+  });
+  $(".hide").click(function() {
+    $("#initially-hidden").slideUp();
+    $("#initially-showing").slideDown();
   });
 });
